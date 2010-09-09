@@ -1,0 +1,3 @@
+include mapdev/config/deployment.ini_tmpl
+recursive-include mapdev/public *
+recursive-include mapdev/templates *

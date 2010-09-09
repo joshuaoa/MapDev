@@ -1,0 +1,36 @@
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="mfbase/ext/resources/css/ext-all.css" />
+   <link rel="stylesheet" type="text/css" href="mfbase/ext/resources/css/xtheme-gray.css" />
+   <link rel="stylesheet" type="text/css" href="mfbase/mapfish/mapfish.css" />
+
+   <script type="text/javascript" src="mfbase/ext/adapter/ext/ext-base.js"></script>
+
+   <script type="text/javascript" src="mfbase/ext/ext-all-debug.js"></script>
+   <script type="text/javascript" src="mfbase/openlayers/lib/Firebug/firebug.js"></script>
+   <script type="text/javascript" src="mfbase/openlayers/lib/OpenLayers.js"></script>
+   <script type="text/javascript" src="mfbase/openlayers/lib/OpenLayers/Lang/fr.js"></script>
+   <script type="text/javascript" src="mfbase/geoext/lib/GeoExt.js"></script>
+   <script type="text/javascript" src="mfbase/mapfish/MapFish.js"></script>
+
+   <script type="text/javascript" src="app/base/js/MAPFISHAPP_map.js"></script>
+   <script type="text/javascript" src="app/base/js/MAPFISHAPP_api.js"></script>
+
+   <!--
+   <script type="text/javascript" src="app/derived/js/MAPFISHAPPDERIVED_map.js"></script>
+   -->
+
+   <script type="text/javascript">
+       function init() {
+           var api = new MAPFISHAPP.api();
+           api.createMap({div: "map"});
+       }
+   </script>
+
+</head>
+<body onload="init()">
+   <p>API Usage example</p>
+   <div id="map" style="width:600px;height:400px;border:solid thin"></div>
+</body>
+</html>
+
